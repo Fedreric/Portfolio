@@ -1,6 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 *{
-  color: #fafafa;
+  color: #fafafa; 
 }
+
+main{
+ min-height: calc(100dvh - 60px);
+ @apply bg-slate-900;
+}
+
+body {   display: grid; 
+  grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr; 
+  grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header header header header"
+    "prev main main main main next"
+    "prev main main main main next"
+    "prev main main main main next"
+    "prev main main main main next"
+    "prev main main main main next"; 
+}
+
+header { grid-area: header; }
+
+.btn-prev { grid-area: prev; }
+
+.btn-next { grid-area: next; }
+
+main { grid-area: main; }

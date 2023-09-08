@@ -24,9 +24,9 @@ export default function Navbar () {
     }
   ];
   return (
-    <header className=''>
+    <header className='bg-slate-900'>
       <nav className=''>
-        <ul className='flex gap-4 my-5 me-5 fixed right-0 border-solid border-b-2 border-indigo-600 '>
+        <ul className='flex gap-4 justify-end me-4'>
           {Links.map((link) => (
             <li key={link.route} className='text-xl my-4 ease-in-out duration-300 hover:scale-[1.1]'>
               <Link href={link.route}>{link.label}</Link>
