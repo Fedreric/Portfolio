@@ -2,29 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Links } from "@/helpers/navlinks";
 export default function Navbar () {
-  const Links = [
-    {
-      label: "Inicio",
-      route: "/"
-    },
-    {
-      label: "Sobre mi",
-      route: "/about"
-    },
-    {
-      label: "Proyectos",
-      route: "/proyects"
-    },
-    {
-      label: "Tecnologias",
-      route: "/stack"
-    },
-    {
-      label: "Contacto",
-      route: "/contact"
-    }
-  ];
   const pathname = usePathname();
 
   return (
