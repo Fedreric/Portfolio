@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Btnprev from '@/components/Btn-prev'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function RootLayout ({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-        <div className='btn-prev flex flex-col justify-center bg-slate-900'><b className='m-auto'>prev</b></div>
+        <Btnprev />
         <div className='btn-next flex flex-col justify-center bg-slate-900'><b className='m-auto'>next</b></div>
       </body>
     </html>
