@@ -3,6 +3,7 @@ import { Links } from "@/helpers/navlinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Icons } from "@/helpers/icons";
 
 export default function Btnprev () {
   const pathname = usePathname();
@@ -18,12 +19,15 @@ export default function Btnprev () {
     <div
       className={
         pathname === "/"
-          ? "btn-prev flex flex-col justify-center bg-slate-900 hidden"
+          ? "btn-prev flex flex-col justify-center bg-slate-900 translate-x-[-100%]"
           : "btn-prev flex flex-col justify-center bg-slate-900"
       }
     >
-      <Link className='m-auto' href={Links[prevLink]?.route}>
-        prev
+      <Link
+        className={pathname === "/" ? "m-auto ease-in-out translate-x-[-100%]" : "m-auto"}
+        href={Links[prevLink]?.route}
+      >
+        {Icons.leftArrow}
       </Link>
     </div>
   );
