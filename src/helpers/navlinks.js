@@ -1,22 +1,27 @@
 export const Links = [
   {
     label: "Inicio",
-    route: "/"
+    route: "/",
+    id: 0
   },
   {
     label: "Sobre mi",
-    route: "/about"
+    route: "/about",
+    id: 1
   },
   {
     label: "Proyectos",
-    route: "/proyects"
+    route: "/proyects",
+    id: 2
   },
   {
     label: "Tecnologias",
-    route: "/stack"
+    route: "/stack",
+    id: 3
   },
   {
     label: "Contacto",
-    route: "/contact"
+    route: "/contact",
+    id: 4
   }
 ];
