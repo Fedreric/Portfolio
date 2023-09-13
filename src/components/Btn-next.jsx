@@ -33,7 +33,7 @@ export default function Btnnext () {
     >
       <button
         className={
-          pathname === "/contact" ? "m-auto ease-in-out translate-x-[100%]" : "m-auto"
+          pathname === "/contact" ? "m-auto ease-in-out translate-x-[100%]" : "m-auto ease-in-out duration-300 hover:scale-[1.5]"
         }
         onClick={handelNextPage}
       >
