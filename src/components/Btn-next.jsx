@@ -1,18 +1,26 @@
 "use client";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Links } from "@/helpers/navlinks";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Btnnext () {
   const pathname = usePathname();
-  const linkActual = Links.filter((link) => link.route === pathname);
-  const [nextLink, setNextLink] = useState(linkActual[0].id + 1);
+  const router = useRouter();
+  const [actualPageId, setActualPageId] = useState(0)
+  const [nextLink, setNextLink] = useState(0);
   useEffect(() => {
-    if (nextLink > Links.length) {
+    const linkActual = Links.filter((link) => link.route === pathname);
+    setActualPageId(linkActual[0].id)
+    if (actualPageId >= Links.length) {
       setNextLink(0);
+      return
     }
-  }, [nextLink]);
+    setNextLink(actualPageId + 1)
+  }, [pathname, actualPageId])
+
+  const handelNextPage = () => {
+    router.push(Links[nextLink].route)
+  }
 
   return (
     <div
@@ -22,9 +30,9 @@ export default function Btnnext () {
           : "btn-next flex flex-col justify-center bg-slate-900"
       }
     >
-      <Link className='m-auto' href={Links[nextLink]?.route}>
+      <button className='m-auto' onClick={handelNextPage}>
         next
-      </Link>
+      </button>
     </div>
   );
 }
