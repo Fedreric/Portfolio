@@ -1,9 +1,9 @@
 "use client";
+import { leftArrow } from "@/helpers/icons";
 import { Links } from "@/helpers/navlinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { leftArrow } from "@/helpers/icons";
 
 export default function Btnprev () {
   const pathname = usePathname();
