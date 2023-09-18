@@ -3,7 +3,7 @@ import { Links } from "@/helpers/navlinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Icons } from "@/helpers/icons";
+import { leftArrow } from "@/helpers/icons";
 
 export default function Btnprev () {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ export default function Btnprev () {
         className={pathname === "/" ? "m-auto ease-in-out translate-x-[-100%]" : "m-auto ease-in-out duration-300 hover:scale-[1.5]"}
         href={Links[prevLink]?.route}
       >
-        {Icons.leftArrow}
+        {leftArrow}
       </Link>
     </div>
   );

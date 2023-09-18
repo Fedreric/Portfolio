@@ -2,7 +2,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { Links } from "@/helpers/navlinks";
 import { useEffect, useState } from "react";
-import { Icons } from "@/helpers/icons";
+import { rightArrow } from "@/helpers/icons";
 
 export default function Btnnext () {
   const pathname = usePathname();
@@ -33,11 +33,13 @@ export default function Btnnext () {
     >
       <button
         className={
-          pathname === "/contact" ? "m-auto ease-in-out translate-x-[100%]" : "m-auto ease-in-out duration-300 hover:scale-[1.5]"
+          pathname === "/contact"
+            ? "m-auto ease-in-out translate-x-[100%]"
+            : "m-auto ease-in-out duration-300 hover:scale-[1.5]"
         }
         onClick={handelNextPage}
       >
-        {Icons.rightArrow}
+        {rightArrow}
       </button>
     </div>
   );
