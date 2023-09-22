@@ -15,7 +15,7 @@ export default function Navbar () {
             return (
               <li
                 key={link.id}
-                className={isActive ? 'text-xl underline decoration-solid my-4 ease-in-out duration-300 hover:scale-[1.07]' : 'text-xl my-4 ease-in-out duration-300 hover:scale-[1.07]'}
+                className={isActive ? 'text-xl border-b-2 border-violet-600 my-4 px-1' : 'text-xl px-1 my-4 ease-out duration-200 hover:scale-[1.07]'}
               >
                 <Link href={link.route}>{link.label}</Link>
               </li>
