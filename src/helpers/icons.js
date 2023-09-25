@@ -1,33 +1,35 @@
 export const rightArrow = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    fill='none'
+    class='icon icon-tabler icon-tabler-chevron-right'
+    width='24'
+    height='24'
     viewBox='0 0 24 24'
-    strokeWidth={1.5}
+    stroke-width='2'
     stroke='currentColor'
-    className='w-6 h-6'
+    fill='none'
+    stroke-linecap='round'
+    stroke-linejoin='round'
   >
-    <path
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      d='M8.25 4.5l7.5 7.5-7.5 7.5'
-    />
+    <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+    <path d='M9 6l6 6l-6 6'></path>
   </svg>
 );
 export const leftArrow = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    fill='none'
+    class='icon icon-tabler icon-tabler-chevron-left'
+    width='24'
+    height='24'
     viewBox='0 0 24 24'
-    strokeWidth={1.5}
+    stroke-width='2'
     stroke='currentColor'
-    className='w-6 h-6'
+    fill='none'
+    stroke-linecap='round'
+    stroke-linejoin='round'
   >
-    <path
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      d='M15.75 19.5L8.25 12l7.5-7.5'
-    />
+    <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+    <path d='M15 6l-6 6l6 6'></path>
   </svg>
 );
 export const linkedin = (
