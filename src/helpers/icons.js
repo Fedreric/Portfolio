@@ -1,15 +1,15 @@
 export const rightArrow = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    class='icon icon-tabler icon-tabler-chevron-right'
+    className='icon icon-tabler icon-tabler-chevron-right'
     width='24'
     height='24'
     viewBox='0 0 24 24'
-    stroke-width='2'
+    strokeWidth='2'
     stroke='currentColor'
     fill='none'
-    stroke-linecap='round'
-    stroke-linejoin='round'
+    strokeLinecap='round'
+    strokeLinejoin='round'
   >
     <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
     <path d='M9 6l6 6l-6 6'></path>
@@ -18,15 +18,15 @@ export const rightArrow = (
 export const leftArrow = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    class='icon icon-tabler icon-tabler-chevron-left'
+    className='icon icon-tabler icon-tabler-chevron-left'
     width='24'
     height='24'
     viewBox='0 0 24 24'
-    stroke-width='2'
+    strokeWidth='2'
     stroke='currentColor'
     fill='none'
-    stroke-linecap='round'
-    stroke-linejoin='round'
+    strokeLinecap='round'
+    strokeLinejoin='round'
   >
     <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
     <path d='M15 6l-6 6l6 6'></path>
@@ -210,5 +210,64 @@ export const github = (
         d='M60.571,46.181c-0.1,0-0.194-0.061-0.233-0.159c-0.334-0.856-0.818-1.528-1.4-1.942 c-0.112-0.08-0.139-0.236-0.059-0.349c0.081-0.113,0.236-0.138,0.349-0.06c0.662,0.472,1.207,1.222,1.576,2.169 c0.05,0.129-0.014,0.273-0.142,0.324C60.632,46.175,60.602,46.181,60.571,46.181z'
       ></path>
     </g>
+  </svg>
+);
+export const react = (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className='icon icon-tabler icon-tabler-brand-react'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    strokeWidth='2'
+    stroke='currentColor'
+    fill='none'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+  >
+    <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+    <path d='M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102'></path>
+    <path d='M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102'></path>
+    <path d='M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2'></path>
+    <path d='M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2'></path>
+    <path d='M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896'></path>
+    <path d='M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897'></path>
+    <path d='M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z'></path>
+  </svg>
+);
+export const nodejs = (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className='icon icon-tabler icon-tabler-brand-nodejs'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    strokeWidth='2'
+    stroke='currentColor'
+    fill='none'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+  >
+    <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+    <path d='M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0'></path>
+    <path d='M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5'></path>
+  </svg>
+);
+export const mongodb = (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className='icon icon-tabler icon-tabler-brand-mongodb'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    strokeWidth='2'
+    stroke='currentColor'
+    fill='none'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+  >
+    <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+    <path d='M12 3v19'></path>
+    <path d='M18 11.227c0 3.273 -1.812 4.77 -6 9.273c-4.188 -4.503 -6 -6 -6 -9.273c0 -4.454 3.071 -6.927 6 -9.227c2.929 2.3 6 4.773 6 9.227z'></path>
   </svg>
 );
